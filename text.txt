@@ -83,4 +83,5 @@ db_university
 
     SELECT COUNT(*) AS `corso_di_laurea`, `department_id` AS `dipartimento` 
     FROM `degrees`
-    GROUP BY `dipartimento`;
+    GROUP BY `dipartimento`
+    ORDER BY `corso_di_laurea` DESC;
