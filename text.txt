@@ -54,3 +54,17 @@ db_university
     SELECT COUNT(*) AS `insegnanti`
     FROM `teachers` 
     WHERE `phone` IS NULL;
+
+
+########## BONUS ##########
+
+1. Contare quanti iscritti ci sono stati ogni anno
+
+    SELECT COUNT(*) AS `studenti`, YEAR(`enrolment_date`) AS `data_iscrizione` 
+    FROM `students` 
+    GROUP BY `data_iscrizione`;
+
+
+2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+    
