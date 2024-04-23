@@ -67,4 +67,11 @@ db_university
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
+    SELECT COUNT(*) AS `professori`, `office_address` AS `edificio`
+    FROM `teachers` 
+    GROUP BY `edificio`;
+
+
+3. Calcolare la media dei voti di ogni appello d'esame
+
     
