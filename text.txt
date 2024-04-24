@@ -110,4 +110,5 @@ db_university
     `degrees`.`level`
     FROM `departments`
     JOIN `degrees` ON `departments`.`id` = `degrees`.`department_id`
-    WHERE `degrees`.`level` = 'Magistrale';
+    WHERE `departments`.`name` = 'Dipartimento di Neuroscienze'
+    AND `degrees`.`level` = 'Magistrale';
